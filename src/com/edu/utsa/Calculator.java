@@ -1,5 +1,6 @@
 package com.edu.utsa;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Calculator {
@@ -17,7 +18,6 @@ public class Calculator {
         System.out.print("Please enter an operator (+, -): ");
         char operator = scanner.next().charAt(0);
 
-        scanner.close();
         long result;
 
         switch(operator) {
@@ -32,7 +32,25 @@ public class Calculator {
                 return;
         }
 
-        System.out.println(firstNumber + " " + operator + " " + secondNumber + ": " + result);
+        System.out.println(firstNumber + " " + operator + " " + secondNumber + "= " + result);
+
+        System.out.print("Would you like to convert the number to a formatted string? (y,n):");
+        String stringResult = "";
+        char decisionToConvert = scanner.next().charAt(0);
+        scanner.close();
+        switch(decisionToConvert) {
+            case 'y':
+                DecimalFormat formatter = new DecimalFormat("#,###.00");
+                stringResult = formatter.format(result);
+                break;
+            case 'n':
+                break;
+            default:
+                System.out.println(decisionToConvert + " is not a valid answer, please try again using y or n.");
+                return;
+        }
+
+        System.out.println(firstNumber + " " + operator + " " + secondNumber + "= " + stringResult);
     }
 
 }
