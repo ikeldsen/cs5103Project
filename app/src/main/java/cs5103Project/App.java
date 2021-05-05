@@ -50,7 +50,7 @@ public class App {
         System.out.println(firstNumber + " " + operator + " " + secondNumber + "= " + result);
 
         System.out.print("Would you like to convert the number to a formatted string? (y,n):");
-        String stringResult = "";
+        String stringResult;
         char decisionToConvert = scanner.next().charAt(0);
         scanner.close();
         switch(decisionToConvert) {

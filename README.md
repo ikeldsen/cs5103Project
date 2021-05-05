@@ -5,7 +5,7 @@
 1. Clone the project at https://github.com/ikeldsen/cs5103Project
 2. Pull down the code in the main branch
 3. Navigate to the Calculator.java file
-4. Run the main method and follow the prompt in the terminal
+4. Run the main method and follow the prompt in the terminal or run gradle build
 
 ## Project Requirements
 
@@ -16,6 +16,18 @@ changes to implementation based on new requirements.<br />
 (d) Testing: Write unit tests for your code.<br />
 (e) Tool Application: Apply code clone detection, static bug detection, and test generation
 tool on your code base and report results. <br />
+
+
+### Code Clone Detection
+Click Analyze -> Inspect Code -> Ok. Look for Duplicate, if you don't see it then there were no duplicates
+
+Current report is zero duplicate lines
+
+### Static Bug Detection
+
+Click Analyze -> Inspect Code -> Ok. Look for Probable Bugs
+
+There are currently no bugs
 
 
 ### Specifications
