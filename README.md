@@ -31,3 +31,8 @@ that can support large numbers potentially in the millions<br />
 3.0 - Given the calculation has been performed provide an output feature that allows the 
 user to choose to have the output converted from a number array to a string (sequence of char)<br />
 3.1 - Add a comma to the resulting string every three characters from the end<br />
+
+
+4.0 Allow the numbers to have a decimal point of exactly one.
+4.1 Align the numbers by the decimal point by adding zeros at the end if a number does not have a decimal point
+
