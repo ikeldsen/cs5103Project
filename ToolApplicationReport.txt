@@ -1,0 +1,19 @@
+Code Clone Detection Report:
+
+Steps to run the report ->
+Click Analyze -> Inspect Code -> Ok. Look for Duplicate, if you don't see it then there were no duplicates
+
+By running this process it will give you a report if there are any duplicates, it can even attempt to remove the
+duplicates for you.
+Current report shows zero duplicate lines.
+
+The experience was nice. It gave me a detailed report if anything was found and gave me options to fix the issues.
+
+Static Bug Detection Report:
+
+Click Analyze -> Inspect Code -> Ok. Look for Probable Bugs
+
+There are currently no bugs. When I first ran the report it found one probably bug for assigning a string a value of
+empty or "" which didn't need to be done because every possible path assigned a value to the string.
+
+The experience was nice. It gave me a detailed report if anything was found and gave me options to fix the issues.

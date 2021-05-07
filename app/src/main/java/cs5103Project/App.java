@@ -69,12 +69,13 @@ public class App {
     }
 
     private static boolean isGreaterThanOneDigit(int number) {
-        return number <= 1;
+        return number > 1;
     }
 
     private static int getNumberOfDigits(BigDecimal n) {
-        n = n.stripTrailingZeros();
-        return n.precision() - n.scale();
+        String string = n.stripTrailingZeros().toPlainString();
+        int index = string.indexOf(".");
+        return index < 0 ? 0 : string.length() - index - 1;
     }
 
     public static void main(String[] args) {

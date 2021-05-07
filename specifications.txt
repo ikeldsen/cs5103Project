@@ -1,0 +1,23 @@
+Concept Definition:
+
+Digit == [0..9]
+Digit1 == [1..9]
+Symbol == {+, -}
+Num == {<0>} U {<Symbol>^<Digit1>^seq Digit}
+Abs == {<0>} U {<Digit1>^seq Digit}
+
+Requirements of function neg:
+neg: Num -> Num
+\forall n: Num
+neg <0> = <0> &
+neg n = <+>^tail n if head n == -
+neg n = <->^tail n if head n == +
+
+Requirements of function add:
+add: Num * Num -> Num
+
+\forall n1: Num, n2: Num
+add n1 <0> = n1 & add <0> n1 = n1 &
+add n1 n2 = (head n1)^(absadd (abs n1) (abs n2)) if head n1 == head n2 &
+add n1 n2 = (head n1)^(abssub (abs n1) (abs n2)) if comp (abs n1) (abs n2) && head n1 != head n2 &
+add n1 n2 = (head n2)^(abssub (abs n2) (abs n1)) if comp (abs n2) (abs n1) && head n1 != head n2

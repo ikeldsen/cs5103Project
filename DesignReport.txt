@@ -1,0 +1,18 @@
+Design Change Report:
+
+I did not use any specific design principles when designing and coding this project. I tried to keep it as simple
+as possible as that allows for easy ability to read, maintain, and update. In my experience keeping things as simple as
+possible is the best approach for long term costs and maintainability.
+
+Design changes with requirement updates:
+
+The first requirements update required my project to add functionality to convert a large number to a string. It noted
+the string should have commas after every three digits, so like 23,555,555. My project did not support large numbers so
+I changed the variable type to long. (It was later noted this did not support large enough numbers). I simply had to add
+functionality to ask at the end of the program if they wanted to convert the number to a string.
+
+The second requirements update required my project to add functionality to allow the numbers to have a decimal point,
+specifically one decimal point. To do this I changed the variable to a BigDecimal which supports as large of a number as
+the ram or jvm would support. I then allowed input of a decimal and did a validation check to ensure there was only one
+decimal place. I also reorganized the code to have smaller methods and be much more readable.
+
