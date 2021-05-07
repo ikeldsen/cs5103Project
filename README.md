@@ -4,7 +4,7 @@
 
 1. Clone the project at https://github.com/ikeldsen/cs5103Project
 2. Pull down the code in the main branch
-3. Navigate to the Calculator.java file
+3. Navigate to the App.java file
 4. Run the main method and follow the prompt in the terminal or run gradle build
 
 ## Project Requirements
